@@ -6,7 +6,7 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 15:44:24 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/13 16:05:18 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/13 20:50:01 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	ft_swap(int *a, int *b)
 	*a = *b;
 	*b = temp;
 }
+
 /*#include <stdio.h>
 int	main(void)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rodrpere <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 16:22:11 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/13 16:22:57 by rodrpere         ###   ########.fr       */
+/*   Created: 2026/04/13 20:32:42 by rodrpere          #+#    #+#             */
+/*   Updated: 2026/04/13 20:33:00 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
