@@ -1,30 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 21:03:00 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/14 10:11:16 by rodrpere         ###   ########.fr       */
+/*   Created: 2026/04/14 10:01:47 by rodrpere          #+#    #+#             */
+/*   Updated: 2026/04/14 10:21:20 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+/*void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}*/
 
-int	ft_strlen(char *str)
+int	main(int argc, char **argv)
 {
 	int	i;
+	int	j;
 
-	i = 0;
-	while (str[i] != '\0')
+	i = 1;
+	while (i < argc)
+	{
+		j = 0;
+		while (argv[i][j])
+		{
+			ft_putchar(argv[i][j]);
+			j++;
+		}
+		ft_putchar('\n');
 		i++;
-	return (i);
+	}
+	return (0);
 }
-
-/*#include <stdio.h>
-int	main()
-{
-	char str[] = "this is a long sentence";
-	printf("%d\n", ft_strlen(str));
-}*/
