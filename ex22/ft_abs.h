@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rodrpere <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 16:11:29 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/14 16:24:24 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/14 16:34:15 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
 #define FT_ABS_H
 
-#define ABS(value)
+#define ABS(value) (((a) < (b)) ? (a) : (b))
+#endif
