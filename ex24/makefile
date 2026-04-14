@@ -1,11 +1,8 @@
 NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I includes
-SRCS = srcs/ft_putchar.c \
-       srcs/ft_putstr.c\
-       srcs/ft_strcmp.c \
-       srcs/ft_strlen.c \
-       srcs/ft_swap.c
+
+SRCS = $(wildcard srcs/*.c)
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
