@@ -6,7 +6,7 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 14:21:08 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/15 19:56:41 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/15 20:25:07 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 int	ft_display_file(char **argv)
 {
-	int	file;
-	int	bytes_read;
+	int		file;
+	int		bytes_read;
 	char	buffer[64];
 
 	file = open(argv[1], O_RDONLY);
