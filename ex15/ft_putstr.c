@@ -6,15 +6,12 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 20:54:10 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/13 20:58:51 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/15 19:37:16 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-/*void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}*/
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {

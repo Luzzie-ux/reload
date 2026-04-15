@@ -6,14 +6,11 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 15:33:03 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/13 20:50:30 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/15 19:37:38 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}*/
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
