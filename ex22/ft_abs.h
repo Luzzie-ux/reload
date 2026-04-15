@@ -6,12 +6,12 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 16:11:29 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/14 16:42:23 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/15 10:07:22 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
-#define FT_ABS_H
+# define FT_ABS_H
 
-#define ABS(Value) (Value) < 0 ? -(Value) : (Value)
+# define ABS(Value) (Value) < 0 ? -(Value) : (Value)
 #endif
