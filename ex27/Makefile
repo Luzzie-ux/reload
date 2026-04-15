@@ -6,24 +6,22 @@
 #    By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 15:15:23 by rodrpere          #+#    #+#              #
-#    Updated: 2026/04/15 15:22:43 by rodrpere         ###   ########.fr        #
+#    Updated: 2026/04/15 20:32:46 by rodrpere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a:
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror -I includes
+NAME = ft_display_file
 
-SRCS = $(wildcard srcs/*.c)
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+
+SRCS = ft_display_file.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
 clean:
 	rm -f $(OBJS)

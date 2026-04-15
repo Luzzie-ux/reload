@@ -6,7 +6,7 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 14:21:08 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/15 20:25:07 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/15 20:30:55 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_display_file(char **argv)
 	file = open(argv[1], O_RDONLY);
 	if (file == -1)
 	{
-		write(2, "Cannot read file.\n", 19);
+		write(2, "Cannot read file.\n", 18);
 		return (0);
 	}
 	bytes_read = 64;
@@ -39,12 +39,12 @@ int	main(int argc, char **argv)
 {
 	if (argc == 1)
 	{
-		write(2, "File name missing.\n", 20);
+		write(2, "File name missing.\n", 19);
 		return (0);
 	}
 	else if (argc > 2)
 	{
-		write(2, "Too many arguments.\n", 21);
+		write(2, "Too many arguments.\n", 20);
 		return (0);
 	}
 	else
