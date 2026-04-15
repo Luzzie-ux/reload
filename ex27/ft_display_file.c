@@ -6,7 +6,7 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 14:21:08 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/15 20:30:55 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/15 20:35:18 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ int	ft_display_file(char **argv)
 	while (bytes_read == 64)
 	{
 		bytes_read = read(file, buffer, 64);
-		write(1, buffer, bytes_read);
+		if (bytes_read > 0)
+			write(1, buffer, bytes_read);
 	}
 	close(file);
 	return (0);
