@@ -6,11 +6,11 @@
 #    By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 10:04:05 by rodrpere          #+#    #+#              #
-#    Updated: 2026/04/15 10:04:08 by rodrpere         ###   ########.fr        #
+#    Updated: 2026/04/15 11:14:33 by rodrpere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME = libft.a:
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I includes
 
