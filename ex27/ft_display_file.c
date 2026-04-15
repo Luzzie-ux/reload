@@ -6,7 +6,7 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 14:21:08 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/15 20:35:18 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/15 21:08:52 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 int	ft_display_file(char **argv)
 {
 	int		file;
-	int		bytes_read;
+	int		bread;
 	char	buffer[64];
 
 	file = open(argv[1], O_RDONLY);
@@ -25,12 +25,17 @@ int	ft_display_file(char **argv)
 		write(2, "Cannot read file.\n", 18);
 		return (0);
 	}
-	bytes_read = 64;
-	while (bytes_read == 64)
+	bread = 64;
+	while (bread == 64)
 	{
-		bytes_read = read(file, buffer, 64);
-		if (bytes_read > 0)
-			write(1, buffer, bytes_read);
+		bread = read(file, buffer, 64);
+		if (bread > 0)
+			write(1, buffer, bread);
+		else if (bread == -1)
+		{
+			write(2, "Cannot read file.\n", 18);
+			return (0);
+		}
 	}
 	close(file);
 	return (0);

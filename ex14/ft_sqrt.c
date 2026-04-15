@@ -6,7 +6,7 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 20:30:34 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/15 20:59:15 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/15 21:09:18 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_sqrt(int nb)
 	return (0);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 int	main(void)
 {
 	int nb;
@@ -48,4 +48,4 @@ int	main(void)
 		printf("Error: Number %d is Irrational", nb);
 	else 
 		printf("Square root of %d is: %d", nb, result);	
-}
+}*/
