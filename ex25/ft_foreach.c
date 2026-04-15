@@ -6,26 +6,21 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 10:11:51 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/15 11:45:20 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/15 20:40:48 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 /*void	ft_putchar(char c);
-
 void	ft_putnbr(int nb);*/
 void	ft_foreach(int *tab, int length, void (*f)(int))
 {
 	int	i;
 
 	i = 0;
-	while (tab[i] < length)
+	while (i < length)
 	{
 		f(tab[i]);
-		if (tab[i] == length - 1)
-		{
-			break ;
-		}
 		i++;
 	}
 }
