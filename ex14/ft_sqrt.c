@@ -6,11 +6,9 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 20:30:34 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/13 20:48:49 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/15 19:48:33 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_sqrt(int nb)
 {

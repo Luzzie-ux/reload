@@ -6,7 +6,7 @@
 #    By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 10:04:05 by rodrpere          #+#    #+#              #
-#    Updated: 2026/04/15 11:14:33 by rodrpere         ###   ########.fr        #
+#    Updated: 2026/04/15 19:52:54 by rodrpere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,11 @@ NAME = libft.a:
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I includes
 
-SRCS = $(wildcard srcs/*.c)
+SRCS = srcs/ft_putchar.c\
+	srcs/ft_putstr.c\
+	srcs/ft_strcmp.c\
+	srcs/ft_strlen.c\
+	srcs/ft_swap.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
