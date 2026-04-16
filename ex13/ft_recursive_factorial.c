@@ -6,7 +6,7 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 20:32:42 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/13 20:32:45 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/16 10:55:13 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_recursive_factorial(int nb)
 {
-	if (nb <= -1)
+	if (nb <= -1 || nb > 12)
 		return (0);
 	if (nb == 1 || nb == 0)
 		return (1);

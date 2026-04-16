@@ -6,7 +6,7 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 20:32:42 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/13 20:33:00 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/16 10:55:21 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_iterative_factorial(int nb)
 	int	fact;
 
 	fact = 1;
-	if (nb <= -1)
+	if (nb <= -1 || nb > 12)
 	{
 		return (0);
 	}
