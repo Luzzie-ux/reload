@@ -6,7 +6,7 @@
 /*   By: rodrpere <rodrpere@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 20:54:10 by rodrpere          #+#    #+#             */
-/*   Updated: 2026/04/15 20:19:23 by rodrpere         ###   ########.fr       */
+/*   Updated: 2026/04/16 09:28:58 by rodrpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,19 @@ void	ft_putstr(char *str)
 
 	i = 0;
 	while (str[i])
+	{
+		ft_putchar(str[i]);
 		i++;
-	ft_putchar(str);
+	}
 }
-
 /*int main(void)
 {
 	ft_putstr("Hello World\n");
 	ft_putstr("BEE\n");
 	ft_putstr("1");
+}
+
+void ft_putchar(char c)
+{
+	write(1, &c, 1);
 }*/
